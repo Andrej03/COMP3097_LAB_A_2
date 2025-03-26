@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		52AFA9242D94603300220B4E /* Products.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52AFA9222D94603300220B4E /* Products.xcdatamodeld */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		52AFA9062D94598400220B4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -31,7 +27,6 @@
 		52AFA8F02D94598400220B4E /* LAB_ASSIGNMENT_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAB_ASSIGNMENT_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AFA9052D94598400220B4E /* LAB_ASSIGNMENT_2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LAB_ASSIGNMENT_2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AFA90F2D94598400220B4E /* LAB_ASSIGNMENT_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LAB_ASSIGNMENT_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52AFA9232D94603300220B4E /* Products.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Products.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -80,7 +75,6 @@
 		52AFA8E72D94598400220B4E = {
 			isa = PBXGroup;
 			children = (
-				52AFA9222D94603300220B4E /* Products.xcdatamodeld */,
 				52AFA8F22D94598400220B4E /* LAB_ASSIGNMENT_2 */,
 				52AFA9082D94598400220B4E /* LAB_ASSIGNMENT_2Tests */,
 				52AFA9122D94598400220B4E /* LAB_ASSIGNMENT_2UITests */,
@@ -242,7 +236,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52AFA9242D94603300220B4E /* Products.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,19 +552,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		52AFA9222D94603300220B4E /* Products.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				52AFA9232D94603300220B4E /* Products.xcdatamodel */,
-			);
-			currentVersion = 52AFA9232D94603300220B4E /* Products.xcdatamodel */;
-			path = Products.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 52AFA8E82D94598400220B4E /* Project object */;
 }
