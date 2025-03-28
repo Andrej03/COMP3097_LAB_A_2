@@ -54,7 +54,7 @@ struct AddNewProductView: View {
         newProduct.id = productID
         newProduct.name = productName
         newProduct.desc = productDescription
-        newProduct.price = Double(productPrice) ?? 0.0
+        newProduct.price = Double(productPrice)
         newProduct.provider = productProvider
     }
     
