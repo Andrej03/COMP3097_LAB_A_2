@@ -36,9 +36,33 @@
 		52AFA90F2D94598400220B4E /* LAB_ASSIGNMENT_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LAB_ASSIGNMENT_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		526A875B2D97129400970C36 /* Exceptions for "LAB_ASSIGNMENT_2" folder in "LAB_ASSIGNMENT_2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Preview Content/dataSample/ProductSampleData.swift",
+			);
+			target = 52AFA8EF2D94598400220B4E /* LAB_ASSIGNMENT_2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		526A875C2D97129400970C36 /* Exceptions for "LAB_ASSIGNMENT_2" folder in "Copy Bundle Resources" phase from "LAB_ASSIGNMENT_2" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 52AFA8EE2D94598400220B4E /* Resources */;
+			membershipExceptions = (
+				"Preview Content/dataSample/ProductSampleData.swift",
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		52AFA8F22D94598400220B4E /* LAB_ASSIGNMENT_2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				526A875B2D97129400970C36 /* Exceptions for "LAB_ASSIGNMENT_2" folder in "LAB_ASSIGNMENT_2" target */,
+				526A875C2D97129400970C36 /* Exceptions for "LAB_ASSIGNMENT_2" folder in "Copy Bundle Resources" phase from "LAB_ASSIGNMENT_2" target */,
+			);
 			path = LAB_ASSIGNMENT_2;
 			sourceTree = "<group>";
 		};
