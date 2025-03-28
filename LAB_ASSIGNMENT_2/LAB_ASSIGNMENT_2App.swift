@@ -1,10 +1,3 @@
-//
-//  LAB_ASSIGNMENT_2App.swift
-//  LAB_ASSIGNMENT_2
-//
-//  Created by Andrej Bachvarovski on 2025-03-26.
-//
-
 import SwiftUI
 
 @main

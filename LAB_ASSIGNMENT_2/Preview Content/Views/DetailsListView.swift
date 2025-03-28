@@ -8,7 +8,7 @@ struct DetailsListView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                // Product ID
+                // Product ID display
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Product ID")
                         .font(.headline)
@@ -17,7 +17,7 @@ struct DetailsListView: View {
                         .font(.body)
                 }
                 
-                // Product Name
+                // Product Name display
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Product Name")
                         .font(.headline)
@@ -27,7 +27,7 @@ struct DetailsListView: View {
                         .fontWeight(.bold)
                 }
                 
-                // Price
+                // Price display
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Price")
                         .font(.headline)
@@ -37,7 +37,7 @@ struct DetailsListView: View {
                         .foregroundColor(.green)
                 }
                 
-                // Provider
+                // Provider display
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Provider")
                         .font(.headline)
@@ -46,7 +46,7 @@ struct DetailsListView: View {
                         .font(.body)
                 }
                 
-                // Description
+                // Description display
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Description")
                         .font(.headline)
@@ -60,5 +60,11 @@ struct DetailsListView: View {
             .padding()
         }
         .navigationTitle(product.name ?? "Product Details")
+    }
+}
+
+struct DetailsListView_Preview: PreviewProvider {
+    static var previews: some View {
+        DetailsListView()
     }
 }
