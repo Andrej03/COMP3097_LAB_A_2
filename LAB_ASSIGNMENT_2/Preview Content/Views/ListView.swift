@@ -1,7 +1,7 @@
 import SwiftUI
 import CoreData
 
-struct ListView<Content: View>: View {
+struct ListView: View {
     @Environment(\.managedObjectContext) private var viewContext
         @State private var showingAddProductSheet = false
     
@@ -11,7 +11,25 @@ struct ListView<Content: View>: View {
     ) var products: FetchedResults<Product>
     
     var body: some View {
-        
+        NavigationView {
+            List {
+                ForEach(products) { product in
+                    NavigationLink(destination: DetailsListView(product: product)) {
+                        Text(product.name ?? "Unknown Product")
+                    }
+                    // TODO: remove if unknonwn
+                }
+            }
+            .navigationBarTitle("Products")
         }
+    }
+}
+
+struct ListView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            ListView()
+        }
+        .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
     }
 }
