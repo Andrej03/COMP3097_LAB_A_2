@@ -11,29 +11,5 @@ struct ListView<Content: View>: View {
     ) var products: FetchedResults<Product>
     
     var body: some View {
-            NavigationView {
-                List {
-                    ForEach(products, id: \.id) { product in
-                        NavigationLink(destination: DetailsListView(product: product)) {
-                            Text(product.name ?? "Unknown Product")
-                        }
-                    }
-                    .onDelete(perform: deleteProducts)
-                }
-                .navigationTitle("Products")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: {
-                            showingAddProductSheet = true
-                        }) {
-                            Label("Add Product", systemImage: "plus")
-                        }
-                    }
-                }
-                .sheet(isPresented: $showingAddProductSheet) {
-                    AddProductView(isPresented: $showingAddProductSheet)
-                        .environment(\.managedObjectContext, viewContext)
-                }
-            }
         }
 }
