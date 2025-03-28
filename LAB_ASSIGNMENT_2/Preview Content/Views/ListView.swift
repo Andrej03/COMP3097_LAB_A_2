@@ -17,7 +17,6 @@ struct ListView: View {
                     NavigationLink(destination: DetailsListView(product: product)) {
                         Text(product.name ?? "Unknown Product")
                     }
-                    // TODO: remove if unknonwn
                 }
             }
             .navigationBarTitle("Products")

@@ -11,10 +11,6 @@ import SwiftUI
 struct LAB_ASSIGNMENT_2App: App {
     let persistenceController = PersistenceController.shared
     
-    init() {
-        persistenceController.initializeDataIfNeeded()
-    }
-
     var body: some Scene {
         WindowGroup {
             ContentView()

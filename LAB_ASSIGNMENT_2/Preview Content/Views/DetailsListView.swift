@@ -4,6 +4,7 @@ import CoreData
 struct DetailsListView: View {
     let product: Product
     
+    // Design presentation for the detailed view
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
