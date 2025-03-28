@@ -11,5 +11,7 @@ struct ListView<Content: View>: View {
     ) var products: FetchedResults<Product>
     
     var body: some View {
+        
         }
+    }
 }
