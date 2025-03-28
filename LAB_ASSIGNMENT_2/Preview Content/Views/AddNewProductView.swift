@@ -14,6 +14,7 @@ struct AddNewProductView: View {
     
     var body: some View {
         NavigationView {
+            // Set form used to get all of the information
             Form {
                 Section(header: Text("Product Details")) {
                     TextField("Product ID", text: $productID)
@@ -29,7 +30,7 @@ struct AddNewProductView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
                         saveProduct()
-                        isPressed = false // Dismiss view after saving
+                        isPressed = false // To Dismiss view after saving
                     }
                     // Disable the button if any field is empty
                     .disabled(productID.isEmpty ||
@@ -49,11 +50,19 @@ struct AddNewProductView: View {
     
     // Save function creates a new Product in Core Data
     private func saveProduct() {
-            let newProduct = Product(context: viewContext)
-            newProduct.id = productID
-            newProduct.name = productName
-            newProduct.desc = productDescription
-            newProduct.price = productPrice
-            newProduct.provider = productProvider
+        let newProduct = Product(context: viewContext)
+        newProduct.id = productID
+        newProduct.name = productName
+        newProduct.desc = productDescription
+        newProduct.price = Double(productPrice) ?? 0.0
+        newProduct.provider = productProvider
+    }
+    
+    // File PreviewProvider
+    struct AddNewProductView_Previews: PreviewProvider {
+        static var previews: some View {
+            AddNewProductView(isPressed: .constant(false))
+                .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
         }
+    }
 }
